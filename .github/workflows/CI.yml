@@ -27,7 +27,7 @@ jobs:
         run: npm test
 
       - name: Generar reporte de cobertura
-        run: ng test --code-coverage
+        run: npx jest --coverage
 
       - name: Simular despliegue
         run: | 
