@@ -1,9 +1,9 @@
-const {peso, percentile }= require('./calcWeightedGrade');
+const { percentile, calcWeightedGrade }= require('./calcWeightedGrade');
 
 test('Calcula la nota ponderada correctamente', () => {
     const notas = [80, 90];
     const pesos = [0.4, 0.6];
-    const resultado = peso(notas, pesos);
+    const resultado = calcWeightedGrade(notas, pesos);
     expect(resultado).toBe(86);
 });
 
