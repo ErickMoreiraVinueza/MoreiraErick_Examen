@@ -14,6 +14,7 @@ function calcWeightedGrade(grades, weights) {
 
 function percentile(p, values){
     values.sort((a, b) => a - b);
+    if (p === 0) return values[0];
     const index = Math.ceil((p / 100) * values.length) - 1;
     return values[index];
 }
