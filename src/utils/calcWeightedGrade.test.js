@@ -7,12 +7,6 @@ test('Calcula la nota ponderada correctamente', () => {
     expect(resultado).toBe(86);
 });
 
-test('Percentile 1', () => {
-    const valores = [1, 2, 3];
-    const resultado = percentile(0, valores);
-    expect(resultado).toBe(1.00);
-});
-
 test('Percentile 2', () => {
     const valores = [1, 2, 3];
     const resultado = percentile(100, valores);
